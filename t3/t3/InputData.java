@@ -5,7 +5,7 @@ public class InputData {
     public String[] enterData() {
         Scanner iScanner = new Scanner(System.in);
         while (true){
-            System.out.println("Введите строку через ПРОБЕЛ (строка должна содержать Ф.И.О, дату рождения - дд.мм.гггг, номер телефона - цифры, пол) : ");
+            System.out.println("Введите строку через ПРОБЕЛ (строка должна содержать Ф.И.О, дату рождения - дд.мм.гггг, номер телефона - цифры) : ");
             String data = iScanner.nextLine();
             String[] arrayData = data.split(" ");
             if (arrayData.length == 6) {
